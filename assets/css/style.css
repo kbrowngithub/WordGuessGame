@@ -1,44 +1,45 @@
-.content {
-    padding: 25px 15px 0 15px;
-    font-size: 18px;
-    background: #dbdfe5;
-    margin-bottom: 15px;
-}
+    /* Some custom styles to beautify this example */
+    .content {
+        padding: 25px 15px 0 15px;
+        font-size: 18px;
+        background: #dbdfe5;
+        margin-bottom: 15px;
+    }
 
-.bcontent {
-    position: relative;
+    .bcontent {
+        position: relative;
 
-}
+    }
 
-.game.bg-alt {
-    background: #abb1b8;
-}
+    .game.bg-alt {
+        background: #abb1b8;
+    }
 
-.container {
-    background-image: url("assets/images/ddp-jm3tjLxg-sU-unsplash.jpg");
-    background-size: cover;
-    /* opacity: .3; */
-}
+    .container {
+        background-image: url("../images/ddp-jm3tjLxg-sU-unsplash.jpg");
+        background-size: cover;
+        /* opacity: .3; */
+    }
 
-.sidebar {
-    background: none;
-    text-align: left;
+    .sidebar {
+        background: none;
+        text-align: left;
 
-}
+    }
 
-.jumbotron {
-    background: rgb(61, 44, 44);
-    color: white;
-}
+    .jumbotron {
+        background: rgb(61, 44, 44);
+        color: white;
+    }
 
-.animals {
-    height: 100%;
-    width: 100%;
-}
+    .animals {
+        height: 100%;
+        width: 100%;
+    }
 
-.barn { 
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    bottom: -100px;
-} 
+    .barn { 
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        bottom: -100px;
+    } 

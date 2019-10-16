@@ -103,7 +103,7 @@ var wgGame = {
                 guessesText.textContent = this.currentGuesses.join("");
             }
         }
-        if (this.guesses > this.maxGuesses) { this.gameOver = "playerLoose";}
+        if (this.guesses >= this.maxGuesses) { this.gameOver = "playerLoose";}
         this.logCurrValues();
     },
 
@@ -154,6 +154,7 @@ wgGame.initialize(9);
 document.onkeyup = function (event) {
     // Update Directions on first key presse
     directionsText.textContent = "GAME ON!";
+    guessesRemainingText.textContent = wgGame.maxGuesses;
 
     // Start playing the game on second key press
     document.onkeyup = function (event) {
