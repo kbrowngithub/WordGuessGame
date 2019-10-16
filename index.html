@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1>Farm Animal Name Guess</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none d-md-block col-sm-0 col-md-3">
+                <!-- <div class="demo-content">.col-md-4 .col-lg-3</div> -->
+                <div class="sidebar demo-content">
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/cows.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/goats.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/cat.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/rooster.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                </div>
+            </div>
+            <div class="content col-xs-12 col-sm-12  col-md-6">
+                <!-- <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="directions-text text-center bg-alt">
+                            <h2 id="directions-text">Press Any Key To Begin!
+                                <span id="directions-text"></span>
+                            </h2>
+                            <h6 id="subDirections-text">Try to guess the name of the farm animal
+                                <span id="directions-text"></span>
+                            </h6>
+
+                            <!--Current Word Container-->
+                            <div>
+                                <h3 id="workingword-text">_ _ _ _ _</h3>
+                            </div>
+                            <div id="scoreBoard">
+                                <!--Guesses left Container-->
+                                <div class="sidebar">
+                                    <h4># GUESSES LEFT:
+                                        <span id="remainingGuesses"></span>
+                                    </h4>
+                                </div>
+
+                                <!--Wins counter Container-->
+                                <div class="sidebar">
+                                    <h4># WINS:
+                                        <span id="wins-text"></span>
+                                    </h4>
+                                </div>
+
+                                <!--Loss counter Container-->
+                                <div class="sidebar">
+                                    <h4># LOSSES:
+                                        <span id="losses-text"></span>
+                                    </h4>
+                                </div>
+
+                                <!--Wrong guesses container-->
+                                <div class="sidebar">
+                                    <h4>GUESSED LETTERS: 
+                                        <span id="guesses-text"></span>
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bcontent col-md-12 mb-0 p-0">
+                        <div>
+                            <figure class="mb-0">
+                                <img class="barn img-fluid" src="assets/images/barn2.jpg">
+                                <!-- <figcaption>Random</figcaption> -->
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-sm-0 col-md-3">
+                <!-- <div class="demo-content">.col-md-12 .col-lg-3</div> -->
+                <div class="sidebar demo-content">
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/Chicks.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/dog.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/horse.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                    <figure>
+                        <img class="animals img-fluid" src="assets/images/pig.jpg">
+                        <!-- <figcaption>Random</figcaption> -->
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
