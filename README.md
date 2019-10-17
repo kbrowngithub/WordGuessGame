@@ -25,7 +25,6 @@ Play proceeds as follows:
  ##### Start Screen
 ```
     - Directions are displayed
-    - Wins, losses, remaining guesses, and incorrect guesses are displayed
  ```
  <img width="977" alt="Start Screen Shot" src="assets/images/StartScreen.PNG">
  
