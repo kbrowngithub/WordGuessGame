@@ -63,7 +63,7 @@ var wgGame = {
 
         if ((asciiValue > 96) && (asciiValue < 123)) {
             console.log("currentGuesses length = " + this.currentGuesses.length);
-            
+
             if ((this.currentGuesses.length === 0) || (this.currentGuesses.indexOf(" " + keyValue + " ") === -1)) {
                 return true;
             }
@@ -71,7 +71,7 @@ var wgGame = {
                 return false;
             }
         }
-        
+
     },
 
     // If the word contains the user selected letter then update workingWord with all occurrances of it
@@ -94,7 +94,7 @@ var wgGame = {
                         guessesText.textContent = this.currentGuesses.join("");
 
                         // If we've replaced all our underscores then player wins
-                        if (this.workingWord.indexOf(" _ ") === -1) {this.gameOver = "playerWin";}
+                        if (this.workingWord.indexOf(" _ ") === -1) { this.gameOver = "playerWin"; }
                     }
                 }
             }
@@ -103,7 +103,7 @@ var wgGame = {
                 guessesText.textContent = this.currentGuesses.join("");
             }
         }
-        if (this.guesses >= this.maxGuesses) { this.gameOver = "playerLoose";}
+        if (this.guesses >= this.maxGuesses) { this.gameOver = "playerLoose"; }
         this.logCurrValues();
     },
 
@@ -111,12 +111,12 @@ var wgGame = {
         if (this.gameOver === "playerWin") {
             this.wins++;
             directionsText.textContent = "You WON!";
-            
+
             //play audio may give us the time we need to reload ...
             // setTimeout(function () { confirm("YOU WON! Play another round?")}, 500);
         }
         else {
-            if(this.gameOver === "playerLoose") {
+            if (this.gameOver === "playerLoose") {
                 this.losses++;
                 directionsText.textContent = "Better luck next time.";
             }
@@ -146,7 +146,7 @@ var wgGame = {
 function updateScreen(game, callback) {
     game.updateStats();
     callback();
-  }
+}
 
 wgGame.initialize(9);
 
@@ -160,15 +160,17 @@ document.onkeyup = function (event) {
     document.onkeyup = function (event) {
         // Process the letter selected
         wgGame.checkLetter(String.fromCharCode(event.keyCode).toLowerCase());
-        
+
         wgGame.updateStats();
         if (wgGame.gameOver !== "gameOn") {
             wgGame.gameStatus();
-            var playAgain = confirm('Play another round?');
-            if (playAgain === true) {
-                wgGame.reset();
-                wgGame.logCurrValues();
-            }
+            // var playAgain = confirm('Play another round?');
+            // if (playAgain === true) {
+            directionsText.textContent = "Click Here To Play Again!";
+            directionsText.onclick = function () { wgGame.reset() };
+
+            wgGame.logCurrValues();
+            // }
         }
     };
 };
