@@ -42,5 +42,6 @@ Play proceeds as follows:
     - Game status is displayed
     - Last state of the working word is displayed
     - Wins, losses, remaining guesses, and incorrect guesses are updated and displayed
+    - Message stating "Click Here To Play Again" is displayed and when clicked, restarts the game.
  ```
  ![](assets/images/EndScreen.PNG)
