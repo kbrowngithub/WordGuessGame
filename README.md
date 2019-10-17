@@ -26,8 +26,8 @@ Play proceeds as follows:
 ```
     - Directions are displayed
     - Wins, losses, remaining guesses, and incorrect guesses are displayed
-    <img width="977" alt="Start Screen Shot" src="assets/images/StartScreen.PNG">
  ```
+ <img width="977" alt="Start Screen Shot" src="assets/images/StartScreen.PNG">
  
 ##### Play Screen: 
 ```
@@ -35,13 +35,13 @@ Play proceeds as follows:
     - Correctly guessed letters replace the underscores until either the entire word is filled in or the player
       runs out of guesses.
     - Incorrectly guessed letters are displayed below.
-    ![](https://github.com/kbrowngithub/WordGuessGame/blob/master/assets/images/PlayScreen.PNG)
  ```
+ ![](https://github.com/kbrowngithub/WordGuessGame/blob/master/assets/images/PlayScreen.PNG)
 
 #### End Screen:
 ```
     - Game status is displayed
     - Last state of the working word is displayed
     - Wins, losses, remaining guesses, and incorrect guesses are updated and displayed
-    ![](assets/images/EndScreen.PNG)
  ```
+ ![](assets/images/EndScreen.PNG)
